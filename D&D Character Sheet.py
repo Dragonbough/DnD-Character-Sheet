@@ -55,19 +55,35 @@ def cclass():
  if c_barbarian == "y" " y":
     race == "barbarian"
     race()
- if c_fighter == "y" " y":
-    race == "fighter"
+ if c_bard == "y" " y":
+    race == "bard"
     race()
- if c_barbarian == "y" " y":
-    race == "barbarian"
+ if c_cleric == "y" " y":
+    race == "cleric"
     race()
-  if c_fighter == "y" " y":
-    race == "fighter"
+  if c_druid == "y" " y":
+    race == "druid"
     race()
- if c_barbarian == "y" " y":
-    race == "barbarian"
+ if c_monk == "y" " y":
+    race == "monk"
     race()
- if
+  if c_paladin == "y" " y":
+    race == "paladin"
+ if c_ranger == "y" " y":
+    race == "ranger"
+    race()
+ if c_rogue == "y" " y":
+    race == "rogue"
+    race()
+ if c_sorcerer == "y" " y":
+    race == "sorcerer"
+    race()
+  if c_warlock == "y" " y":
+    race == "warlock"
+    race()
+ if c_wizard == "y" " y":
+    race == "wizard"
+    race()
     
  
 
