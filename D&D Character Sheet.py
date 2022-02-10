@@ -47,9 +47,29 @@ def cclass():
                                                 print ("Wizard?")
                                                 c_wizard=input("Y or N?")
                                                 if c_wizard == "n" or " n":
-                                                    ()cclass
+                                                    cclass()
 
-                                  
+ if c_fighter == "y" " y":
+    race == "fighter"
+    race()
+ if c_barbarian == "y" " y":
+    race == "barbarian"
+    race()
+ if c_fighter == "y" " y":
+    race == "fighter"
+    race()
+ if c_barbarian == "y" " y":
+    race == "barbarian"
+    race()
+  if c_fighter == "y" " y":
+    race == "fighter"
+    race()
+ if c_barbarian == "y" " y":
+    race == "barbarian"
+    race()
+ if
+    
+ 
 
                 
                                  
