@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-DnD-Character-Sheet",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-D&D Character Sheet",
+      "appliesTo": "D&D Character Sheet.py",
+      "type": "launch"
+    }
+  ]
+}
