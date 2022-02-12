@@ -1,91 +1,94 @@
-def name():
-    ch_name=input("What is your character's name?")
-    print("So your character name is ", ch_name , "?")
-    ch_name_c=input("Y or N?")
-    if ch_name_c == "n" or " n":
-        name()
-    if ch_name_c == "y" or " y":
-        cclass()
-
-name()
 
 def cclass():
 
     print("What is your character's class?")
     print ("Fighter?")
     c_fighter=input("Y or N?")
-    if c_fighter == "n" or " n":
+    if c_fighter == "n":
         print ("Barbarian?")
         c_barbarian=input("Y or N?")
-        if c_barbarian == "n" or " n":
+        if c_barbarian == "n":
             print ("Bard?")
             c_bard=input("Y or N?")
-            if c_bard == "n" or " n":
+            if c_bard == "n":
                 print ("Cleric?")
                 c_cleric=input("Y or N?")
-                if c_cleric == "n" or " n":
+                if c_cleric == "n":
                     print ("Druid?")
                     c_druid=input("Y or N?")
-                    if c_druid == "n" or " n":
+                    if c_druid == "n":
                         print ("Monk?")
                         c_monk=input("Y or N?")
-                        if c_monk == "n" or " n":
+                        if c_monk == "n":
                             print ("Paladin?")
                             c_paladin=input("Y or N?")
-                            if c_paladin == "n" or " n":
+                            if c_paladin == "n":
                                 print ("Ranger?")
                                 c_ranger=input("Y or N?")
-                                if c_ranger == "n" or " n":
+                                if c_ranger == "n":
                                     print ("Rogue?")
                                     c_rogue=input("Y or N?")
-                                    if c_rogue == "n" or " n":
+                                    if c_rogue == "n":
                                         print ("Sorcerer?")
                                         c_sorcerer=input("Y or N?")
-                                        if c_sorcerer == "n" or " n":
+                                        if c_sorcerer == "n":
                                             print ("Warlock")
                                             c_warlock=input("Y or N?")
-                                            if c_warlock == "n" or " n":
+                                            if c_warlock == "n":
                                                 print ("Wizard?")
                                                 c_wizard=input("Y or N?")
-                                                if c_wizard == "n" or " n":
+                                                if c_wizard == "n":
                                                     cclass()
-    if c_fighter == "y" " y":
+    if c_fighter == "y":
         race == "fighter"
         race()
-    if c_barbarian == "y" " y":
+    if c_barbarian == "y":
         race == "barbarian"
         race()
-    if c_bard == "y" " y":
+    if c_bard == "y":
         race == "bard"
         race()
-    if c_cleric == "y" " y":
+    if c_cleric == "y":
         race == "cleric"
         race()
-    if c_druid == "y" " y":
+    if c_druid == "y":
         race == "druid"
         race()
-    if c_monk == "y" " y":
+    if c_monk == "y":
         race == "monk"
         race()
-    if c_paladin == "y" " y":
+    if c_paladin == "y":
         race == "paladin"
-    if c_ranger == "y" " y":
+    if c_ranger == "y":
         race == "ranger"
         race()
-    if c_rogue == "y" " y":
+    if c_rogue == "y":
         race == "rogue"
         race()
-    if c_sorcerer == "y" " y":
+    if c_sorcerer == "y":
         race == "sorcerer"
         race()
-    if c_warlock == "y" " y":
+    if c_warlock == "y":
         race == "warlock"
         race()
-    if c_wizard == "y" " y":
+    if c_wizard == "y":
         race == "wizard"
         race()
-def race():
-    print("What is your character race?")
+
+def name():
+    ch_name=input("What is your character's name?")
+    print("So your character name is ", ch_name , "?")
+    ch_name_c=input("Y or N?")
+    if ch_name_c == "n":
+        name()
+    if ch_name_c == "y":
+        cclass()
+
+name()
+
+
+
+
 
                 
                                  
