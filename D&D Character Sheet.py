@@ -1,4 +1,16 @@
 
+def race():
+
+    print ("What is your character's race?")
+    print ("Human?")
+    r_human=input ("Y or N?")
+    if r_human == "n":
+        print ("Dragonborne?")
+        r_dragonborne=input ("Y or N?")
+        if r_dragonborne == "n":
+            print ("Dwarf")
+
+
 def cclass():
 
     print("What is your character's class?")
@@ -40,39 +52,40 @@ def cclass():
                                                 if c_wizard == "n":
                                                     cclass()
     if c_fighter == "y":
-        race == "fighter"
+        cclass == "fighter"
         race()
     if c_barbarian == "y":
-        race == "barbarian"
+        cclass == "barbarian"
         race()
     if c_bard == "y":
-        race == "bard"
+        cclass == "bard"
         race()
     if c_cleric == "y":
-        race == "cleric"
+        cclass == "cleric"
         race()
     if c_druid == "y":
-        race == "druid"
+        cclass == "druid"
         race()
     if c_monk == "y":
-        race == "monk"
+        cclass == "monk"
         race()
     if c_paladin == "y":
-        race == "paladin"
+        cclass == "paladin"
+        race()
     if c_ranger == "y":
-        race == "ranger"
+        cclass == "ranger"
         race()
     if c_rogue == "y":
-        race == "rogue"
+        cclass == "rogue"
         race()
     if c_sorcerer == "y":
-        race == "sorcerer"
+        cclass == "sorcerer"
         race()
     if c_warlock == "y":
-        race == "warlock"
+        cclass == "warlock"
         race()
     if c_wizard == "y":
-        race == "wizard"
+        cclass == "wizard"
         race()
 
 def name():
