@@ -1,9 +1,111 @@
+import random
+def abilityscores():
+
+    rollorpick = input ("Do you want to roll or pick your ability scores?")
+    if rollorpick == ("pick, p"):
+        print ("You may assign each of these numbers once to one of the abilities: 15,14,13,12,10,8")
+    if rollorpick == ("roll", "r"):
+        print ("Rolling for stats...")
+        stat1 = random.randint(1, 6)
+        stat2 = random.randint(1, 6)
+        stat3 = random.randint(1, 6)
+        stat4 = random.randint(1, 6)
+        statlist = [stat1, stat2, stat3, stat4]
+        droppedstat = min (statlist)
+        print (droppedstat)
+
+def bground():
+    
+    print ("What is your character's background?")
+    print ("Acolyte?")
+    b_acolyte = input ("Y or N?")
+    if b_acolyte == "y":
+        c_bground = "Acolyte"
+        abilityscores()
+    if b_acolyte == "n":
+        print ("Charlatan?")
+        b_charlatan = input ("Y or N?")
+        if b_charlatan == "n":
+            print ("Criminal?")
+            b_criminal = input ("Y or N?")
+            if b_criminal == "n":
+                print ("Entertainer?")
+                b_entertainer = input ("Y or N?")
+                if b_entertainer == "n":
+                    print ("Folk Hero?")
+                    b_folk_h = input ("Y or N?")
+                    if b_folk_h == "n":
+                        print ("Guild Artisan?")
+                        b_guild_a = input ("Y or N?")
+                        if b_guild_a == "n":
+                            print ("Hermit?")
+                            b_hermit = input ("Y or N?")
+                            if b_hermit == "n":
+                                print("Noble?")
+                                b_noble = input ("Y or N?")
+                                if b_noble == "n":
+                                    print("Outlander?")
+                                    b_outlander = input ("Y or N?")
+                                    if b_outlander == "n":
+                                        print ("Sage?")
+                                        b_sage = input ("Y or N?")
+                                        if b_sage == "n":
+                                            print ("Sailor?")
+                                            b_sailor = input ("Y or N?")
+                                            if b_sailor == "n":
+                                                print ("Soldier?")
+                                                b_soldier = input ("Y or N?")
+                                                if b_soldier == "n":
+                                                    print ("Urchin?")
+                                                    b_urchin = input ("Y or N?")
+                                                    if b_urchin == "n":
+                                                        bground()
+
+        if b_charlatan == "y":
+            c_bground = "Charlatan"
+            abilityscores()
+        if b_criminal == "y":
+            c_bground = "Criminal"
+            abilityscores()
+        if b_entertainer == "y":
+            c_bground = "Entertainer"
+            abilityscores()
+        if b_folk_h == "y":
+            c_bground = "Folk Hero"
+            abilityscores()
+        if b_guild_a == "y":
+            c_bground = "Guild Artisan"
+            abilityscores()
+        if b_hermit == "y":
+            c_bground = "Hermit"
+            abilityscores()
+        if b_noble == "y":
+            c_bground = "Noble"
+            abilityscores()
+        if b_outlander == "y":
+            c_bground = "Outlander"
+            abilityscores()
+        if b_sage == "y":
+            c_bground = "Sage"
+            abilityscores()
+        if b_sailor == "y":
+            c_bground = "Sailor"
+            abilityscores()
+        if b_soldier == "y":
+            c_bground = "Soldier"
+            abilityscores()
+        if b_urchin == "y":
+            c_bground = "Urchin"
+            abilityscores()
 
 def race():
 
     print ("What is your character's race?")
     print ("Human?")
     r_human = input ("Y or N?")
+    if r_human == "y":
+        c_race = "Human"
+        bground()
     if r_human == "n":
         print ("Dragonborne?")
         r_dragonborne = input ("Y or N?")
@@ -30,9 +132,7 @@ def race():
                                     r_tiefling = input ("Y or N?")
                                     if r_tiefling == "n":
                                         race()
-        if r_human == "y":
-            c_race = "Human"
-            bground()
+
         if r_dragonborne == "y":
             c_race = "Dragonborn"
             bground()
@@ -47,14 +147,15 @@ def race():
             bground()
         if r_h_elf == "y":
             c_race = "Half-Elf"
+            bground()
         if r_halfling == "y":
-            c_race "Halfling"
+            c_race = "Halfling"
             bground()
         if r_h_orc == "y":
-            c_race "Half-Orc"
+            c_race = "Half-Orc"
             bground()
         if r_tiefling == "y":
-            c_race "Tiefling"
+            c_race = "Tiefling"
             bground()
 
 def cclass():
