@@ -25,78 +25,77 @@ def bground():
     if b_acolyte == "n":
         print ("Charlatan?")
         b_charlatan = input ("Y or N?")
-        if b_charlatan == "n":
-            print ("Criminal?")
-            b_criminal = input ("Y or N?")
-            if b_criminal == "n":
-                print ("Entertainer?")
-                b_entertainer = input ("Y or N?")
-                if b_entertainer == "n":
-                    print ("Folk Hero?")
-                    b_folk_h = input ("Y or N?")
-                    if b_folk_h == "n":
-                        print ("Guild Artisan?")
-                        b_guild_a = input ("Y or N?")
-                        if b_guild_a == "n":
-                            print ("Hermit?")
-                            b_hermit = input ("Y or N?")
-                            if b_hermit == "n":
-                                print("Noble?")
-                                b_noble = input ("Y or N?")
-                                if b_noble == "n":
-                                    print("Outlander?")
-                                    b_outlander = input ("Y or N?")
-                                    if b_outlander == "n":
-                                        print ("Sage?")
-                                        b_sage = input ("Y or N?")
-                                        if b_sage == "n":
-                                            print ("Sailor?")
-                                            b_sailor = input ("Y or N?")
-                                            if b_sailor == "n":
-                                                print ("Soldier?")
-                                                b_soldier = input ("Y or N?")
-                                                if b_soldier == "n":
-                                                    print ("Urchin?")
-                                                    b_urchin = input ("Y or N?")
-                                                    if b_urchin == "n":
-                                                        bground()
-
-        if b_charlatan == "y":
-            c_bground = "Charlatan"
-            abilityscores()
-        if b_criminal == "y":
-            c_bground = "Criminal"
-            abilityscores()
-        if b_entertainer == "y":
-            c_bground = "Entertainer"
-            abilityscores()
-        if b_folk_h == "y":
-            c_bground = "Folk Hero"
-            abilityscores()
-        if b_guild_a == "y":
-            c_bground = "Guild Artisan"
-            abilityscores()
-        if b_hermit == "y":
-            c_bground = "Hermit"
-            abilityscores()
-        if b_noble == "y":
-            c_bground = "Noble"
-            abilityscores()
-        if b_outlander == "y":
-            c_bground = "Outlander"
-            abilityscores()
-        if b_sage == "y":
-            c_bground = "Sage"
-            abilityscores()
-        if b_sailor == "y":
-            c_bground = "Sailor"
-            abilityscores()
-        if b_soldier == "y":
-            c_bground = "Soldier"
-            abilityscores()
-        if b_urchin == "y":
-            c_bground = "Urchin"
-            abilityscores()
+    if b_charlatan == "y":
+        c_bground = "Charlatan"
+        abilityscores()
+    if b_charlatan == "n":
+        print ("Criminal?")
+        b_criminal = input ("Y or N?")
+    if b_criminal == "y":
+        c_bground = "Criminal"
+        abilityscores()
+    if b_criminal == "n":
+        print ("Entertainer?")
+        b_entertainer = input ("Y or N?")
+    if b_entertainer == "y":
+        c_bground = "Entertainer"
+        abilityscores()
+    if b_entertainer == "n":
+        print ("Folk Hero?")
+        b_folk_h = input ("Y or N?")
+    if b_folk_h == "y":
+        c_bground = "Folk Hero"
+        abilityscores()
+    if b_folk_h == "n":
+        print ("Guild Artisan?")
+        b_guild_a = input ("Y or N?")
+    if b_guild_a == "y":
+        c_bground = "Guild Artisan"
+        abilityscores()
+    if b_guild_a == "n":
+        print ("Hermit?")
+        b_hermit = input ("Y or N?")
+    if b_hermit == "y":
+        c_bground = "Hermit"
+        abilityscores()
+    if b_hermit == "n":
+        print("Noble?")
+        b_noble = input ("Y or N?")
+    if b_noble == "y":
+        c_bground = "Noble"
+        abilityscores()
+    if b_noble == "n":
+        print("Outlander?")
+        b_outlander = input ("Y or N?")
+    if b_outlander == "y":
+        c_bground = "Outlander"
+        abilityscores()
+    if b_outlander == "n":
+        print ("Sage?")
+        b_sage = input ("Y or N?")
+    if b_sage == "y":
+        c_bground = "Sage"
+        abilityscores()
+    if b_sage == "n":
+        print ("Sailor?")
+        b_sailor = input ("Y or N?")
+    if b_sailor == "y":
+        c_bground = "Sailor"
+        abilityscores()
+    if b_sailor == "n":
+        print ("Soldier?")
+        b_soldier = input ("Y or N?")
+    if b_soldier == "y":
+        c_bground = "Soldier"
+        abilityscores()
+    if b_soldier == "n":
+        print ("Urchin?")
+        b_urchin = input ("Y or N?")
+    if b_urchin == "y":
+        c_bground = "Urchin"
+        abilityscores()
+    if b_urchin == "n":
+        bground() 
 
 def race():
 
