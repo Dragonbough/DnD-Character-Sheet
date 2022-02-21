@@ -120,49 +120,44 @@ def race():
     if r_dwarf == "n":
         print ("Elf?")
         r_elf = input ("Y or N?")
-                if r_elf == "n":
-                    print ("Gnome")
-                    r_gnome = input ("Y or N?")
-                    if r_gnome == "n":
-                        print ("Half-Elf?")
-                        r_h_elf = input ("Y or N?")
-                        if r_h_elf == "n":
-                            print ("Halfling?")
-                            r_halfling = input ("Y or N?")
-                            if r_halfling == "n":
-                                print ("Half-Orc")
-                                r_h_orc = input ("Y or N?")
-                                if r_h_orc == "n":
-                                    print ("Tiefling")
-                                    r_tiefling = input ("Y or N?")
-                                    if r_tiefling == "n":
-                                        race()
-
-
-        if r_dwarf == "y":
-            c_race = "Dwarf"
-            bground()
-        if r_elf == "y":
-            c_race = "Elf"
-            bground()
-        if r_gnome == "y":
-            c_race = "Gnome"
-            bground()
-        if r_h_elf == "y":
-            c_race = "Half-Elf"
-            bground()
-        if r_halfling == "y":
-            c_race = "Halfling"
-            bground()
-        if r_h_orc == "y":
-            c_race = "Half-Orc"
-            bground()
+    if r_elf == "y":
+        c_race = "Elf"
+        bground()
+    if r_elf == "n":
+        print ("Gnome")
+        r_gnome = input ("Y or N?")
+    if r_gnome == "y":
+        c_race = "Gnome"
+        bground()
+    if r_gnome == "n":
+        print ("Half-Elf?")
+        r_h_elf = input ("Y or N?")
+    if r_h_elf == "y":
+        c_race = "Half-Elf"
+        bground()
+    if r_h_elf == "n":
+       print ("Halfling?")
+       r_halfling = input ("Y or N?")
+    if r_halfling == "y":
+       c_race = "Halfling"
+       bground()
+    if r_halfling == "n":
+        print ("Half-Orc")
+        r_h_orc = input ("Y or N?")
+    if r_h_orc == "y":
+        c_race = "Half-Orc"
+        bground()
+    if r_h_orc == "n":
+        print ("Tiefling")
+        r_tiefling = input ("Y or N?")
         if r_tiefling == "y":
-            c_race = "Tiefling"
-            bground()
+        c_race = "Tiefling"
+        bground()
+    if r_tiefling == "n":
+        race()
 
 def cclass():
-
+    
     print("What is your character's class?")
     print ("Fighter?")
     c_fighter = input("Y or N?")
