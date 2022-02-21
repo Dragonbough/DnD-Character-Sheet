@@ -108,12 +108,18 @@ def race():
     if r_human == "n":
         print ("Dragonborne?")
         r_dragonborne = input ("Y or N?")
-        if r_dragonborne == "n":
-            print ("Dwarf?")
-            r_dwarf = input ("Y or N?")
-            if r_dwarf == "n":
-                print ("Elf?")
-                r_elf = input ("Y or N?")
+    if r_dragonborne == "y":
+        c_race = "Dragonborn"
+        bground()
+    if r_dragonborne == "n":
+        print ("Dwarf?")
+        r_dwarf = input ("Y or N?")
+    if r_dwarf == "y":
+        c_race = "Dwarf"
+        bground()
+    if r_dwarf == "n":
+        print ("Elf?")
+        r_elf = input ("Y or N?")
                 if r_elf == "n":
                     print ("Gnome")
                     r_gnome = input ("Y or N?")
@@ -132,9 +138,7 @@ def race():
                                     if r_tiefling == "n":
                                         race()
 
-        if r_dragonborne == "y":
-            c_race = "Dragonborn"
-            bground()
+
         if r_dwarf == "y":
             c_race = "Dwarf"
             bground()
