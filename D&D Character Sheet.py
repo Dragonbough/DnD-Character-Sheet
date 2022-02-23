@@ -1,11 +1,12 @@
 import random
+import time
 def abilityscores():
 
     rollorpick = input ("Do you want to roll or pick your ability scores?")
-    if rollorpick == ("pick, p"):
+    if rollorpick == "r":
         print ("You may assign each of these numbers once to one of the abilities: 15,14,13,12,10,8")
-    if rollorpick == ("roll", "r"):
         print ("Rolling for stats...")
+        time.sleep()
         stat1 = random.randint(1, 6)
         stat2 = random.randint(1, 6)
         stat3 = random.randint(1, 6)
@@ -25,25 +26,24 @@ def bground():
         abilityscores()
     if b_acolyte == "n":
         print ("Charlatan?")
-        b_charlatan = input ("Y or N?")
+    b_charlatan = input ("Y or N?")
     if b_charlatan == "y":
-        c_bground = "Charlatan"
         abilityscores()
     if b_charlatan == "n":
         print ("Criminal?")
-        b_criminal = input ("Y or N?")
+    b_criminal = input ("Y or N?")
     if b_criminal == "y":
         c_bground = "Criminal"
         abilityscores()
     if b_criminal == "n":
         print ("Entertainer?")
-        b_entertainer = input ("Y or N?")
+    b_entertainer = input ("Y or N?")
     if b_entertainer == "y":
         c_bground = "Entertainer"
         abilityscores()
     if b_entertainer == "n":
         print ("Folk Hero?")
-        b_folk_h = input ("Y or N?")
+    b_folk_h = input ("Y or N?")
     if b_folk_h == "y":
         c_bground = "Folk Hero"
         abilityscores()
