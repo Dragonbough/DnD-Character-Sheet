@@ -151,7 +151,7 @@ def race():
     if r_h_orc == "n":
         print ("Tiefling")
         r_tiefling = input ("Y or N?")
-        if r_tiefling == "y":
+    if r_tiefling == "y":
         c_race = "Tiefling"
         bground()
     if r_tiefling == "n":
