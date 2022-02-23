@@ -1,3 +1,4 @@
+from math import acos
 import random
 import time
 def abilityscores():
@@ -6,14 +7,65 @@ def abilityscores():
     if rollorpick == "r":
         print ("You may assign each of these numbers once to one of the abilities: 15,14,13,12,10,8")
         print ("Rolling for stats...")
-        time.sleep()
-        stat1 = random.randint(1, 6)
-        stat2 = random.randint(1, 6)
-        stat3 = random.randint(1, 6)
-        stat4 = random.randint(1, 6)
-        statlist = [stat1, stat2, stat3, stat4]
-        droppedstat = min (statlist)
-        print (droppedstat)
+        time.sleep(1)
+        a_stat1 = random.randrange(1, 6)
+        a_stat2 = random.randrange(1, 6)
+        a_stat3 = random.randrange(1, 6)
+        a_stat4 = random.randrange(1, 6)
+        a_statlist = [a_stat1, a_stat2, a_stat3, a_stat4]
+        a_statlist.remove(min(a_statlist))
+        a_stat=sum(a_statlist)
+       
+        b_stat1 = random.randrange(1, 6)
+        b_stat2 = random.randrange(1, 6)
+        b_stat3 = random.randrange(1, 6)
+        b_stat4 = random.randrange(1, 6)
+        b_statlist = [b_stat1, b_stat2, b_stat3, b_stat4]
+        b_statlist.remove(min(b_statlist))
+        b_stat=sum(b_statlist)
+        
+        c_stat1 = random.randrange(1, 6)
+        c_stat2 = random.randrange(1, 6)
+        c_stat3 = random.randrange(1, 6)
+        c_stat4 = random.randrange(1, 6)
+        c_statlist = [c_stat1, c_stat2, c_stat3, c_stat4]
+        c_statlist.remove(min(c_statlist))
+        c_stat=sum(c_statlist)
+        
+        d_stat1 = random.randrange(1, 6)
+        d_stat2 = random.randrange(1, 6)
+        d_stat3 = random.randrange(1, 6)
+        d_stat4 = random.randrange(1, 6)
+        d_statlist = [d_stat1, d_stat2, d_stat3, d_stat4]
+        d_statlist.remove(min(d_statlist))
+        d_stat=sum(d_statlist)
+        
+        e_stat1 = random.randrange(1, 6)
+        e_stat2 = random.randrange(1, 6)
+        e_stat3 = random.randrange(1, 6)
+        e_stat4 = random.randrange(1, 6)
+        e_statlist = [e_stat1, e_stat2, e_stat3, e_stat4]
+        e_statlist.remove(min(e_statlist))
+        e_stat=sum(e_statlist)
+
+        f_stat1 = random.randrange(1,6)
+        f_stat2 = random.randrange(1,6)
+        f_stat3 = random.randrange(1,6)
+        f_stat4 = random.randrange(1,6)
+        f_statlist = [f_stat1, f_stat2, f_stat3, f_stat4]
+        f_statlist.remove(min(f_statlist))
+        f_stat=sum(f_statlist)
+
+        statlist = [a_stat, b_stat, c_stat, e_stat, d_stat, f_stat]
+        print (statlist)
+        reroll = input ("Reroll?")
+        if reroll == "y":
+            abilityscores()
+        
+        print ("Do you want to assign your scores manually or use Auto Assign?")
+        m_or_n = input ("Y(Manual) or N(Auto)?")
+        if m_or_n == "n":
+
 
 def bground():
     
