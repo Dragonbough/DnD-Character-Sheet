@@ -16,6 +16,7 @@ def abilityscores():
 
 def bground():
     
+    global b_acolyte, b_charlatan, b_criminal, b_entertainer, b_folk_h, b_guild_a, b_hermit, b_noble, b_outlander, b_sage, b_sailor, b_soldier, b_urchin
     print ("What is your character's background?")
     print ("Acolyte?")
     b_acolyte = input ("Y or N?")
