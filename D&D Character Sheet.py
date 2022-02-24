@@ -65,6 +65,8 @@ def abilityscores():
         print ("Do you want to assign your scores manually or use Auto Assign?")
         m_or_n = input ("Y(Manual) or N(Auto)?")
         if m_or_n == "n":
+            if cclass == "Barbarian:
+                
 
 
 def bground():
