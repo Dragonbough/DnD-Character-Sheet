@@ -64,9 +64,15 @@ def abilityscores():
         
         print ("Do you want to assign your scores manually or use Auto Assign?")
         m_or_n = input ("Y(Manual) or N(Auto)?")
-        if m_or_n == "n":
-
-
+        if m_or_n == "y":
+            print ("What stat number will you assign to Strength?")
+            s_strength = input (statlist)
+            if s_strength in statlist:
+                statlist.remove(s_strength)
+                else:
+                    while not s_strength in statlist:
+                        print ("Invalid stat number")
+                    
 def bground():
     
     global b_acolyte, b_charlatan, b_criminal, b_entertainer, b_folk_h, b_guild_a, b_hermit, b_noble, b_outlander, b_sage, b_sailor, b_soldier, b_urchin
