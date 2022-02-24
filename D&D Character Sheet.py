@@ -69,9 +69,40 @@ def abilityscores():
             s_strength = input (statlist)
             if s_strength in statlist:
                 statlist.remove(s_strength)
-                else:
-                    while not s_strength in statlist:
-                        print ("Invalid stat number")
+            else:
+                print ("Invalid stat number")
+            print("What stat number will you assign to Dexterity?")
+            s_dexterity = input (statlist)
+            if s_dexterity in statlist:
+                statlist.remove(s_dexterity)
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Constitution?")
+            s_constitution = input (statlist)
+            if s_constitution in statlist:
+                statlist.remove(s_constitution)
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Intelligence?")
+            s_intel = input (statlist)
+            if s_intel in statlist:
+                statlist.remove(s_intel)
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Wisdom?")
+            s_wisdom = input (statlist)
+            if s_wisdom in statlist:
+                statlist.remove(s_wisdom)
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you apply to Charisma?")
+            s_charisma = input (statlist)
+            if s_charisma in statlist:
+                statlist.remove(s_charisma)
+            else:
+                print ("Invalid stat number")
+
+
                     
 def bground():
     
@@ -137,19 +168,19 @@ def bground():
         abilityscores()
     if b_sage == "n":
         print ("Sailor?")
-        b_sailor = input ("Y or N?")
+    b_sailor = input ("Y or N?")
     if b_sailor == "y":
         c_bground = "Sailor"
         abilityscores()
     if b_sailor == "n":
         print ("Soldier?")
-        b_soldier = input ("Y or N?")
+    b_soldier = input ("Y or N?")
     if b_soldier == "y":
         c_bground = "Soldier"
         abilityscores()
     if b_soldier == "n":
         print ("Urchin?")
-        b_urchin = input ("Y or N?")
+    b_urchin = input ("Y or N?")
     if b_urchin == "y":
         c_bground = "Urchin"
         abilityscores()
@@ -302,20 +333,3 @@ def name():
         cclass()
 
 name()
-
-
-
-
-
-                
-                                 
-    
-    
-    
-        
-    
-        
-
-    
-    
- 
