@@ -67,7 +67,7 @@ def abilityscores():
         if m_or_n == "y":
             print ("What stat number will you assign to Strength?")
             s_strength = input (statlist)
-            if s_strength in statlist:
+            if str(s_strength) in statlist:
                 statlist.remove(s_strength)
             else:
                 print ("Invalid stat number")
@@ -97,7 +97,7 @@ def abilityscores():
                 print ("Invalid stat number")
             print ("What stat number will you apply to Charisma?")
             s_charisma = input (statlist)
-            if s_charisma in statlist:
+            if str(s_charisma) in statlist:
                 statlist.remove(s_charisma)
             else:
                 print ("Invalid stat number")
