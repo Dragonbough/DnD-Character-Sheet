@@ -1,8 +1,144 @@
 from math import acos
 import random
 import time
+ 
+def abilitymodifiers():
+    
+    print ("Determining Ability Modifiers...")
+    time.sleep(1)
+
+    if int(s_strength) == (2, 3):
+        str_am = -4
+    if int(s_strength) == (4, 5):
+        str_am = -3
+    if int(s_strength) == (6, 7):
+        str_am = -2
+    if int(s_strength) == (8, 9):
+        str_am = -1
+    if int(s_strength) == (10, 11):
+        str_am = 0
+    if int(s_strength) == (12, 13):
+        str_am = 1
+    if int(s_strength) == (14, 15):
+        str_am = 2
+    if int(s_strength) == (16, 17):
+        str_am = 3 
+    if int(s_strength) == (18, 19):
+        str_am = 4
+    if int(s_strength) == (20, 21):
+        str_am = 5
+
+    if int(s_dexterity) == (2, 3):
+        dex_am = -4
+    if int(s_dexterity) == (4, 5):
+        dex_am = -3
+    if int(s_dexterity) == (6, 7):
+        dex_am = -2
+    if int(s_dexterity) == (8, 9):
+        dex_am = -1
+    if int(s_dexterity) == (10, 11):
+        dex_am = 0
+    if int(s_dexterity) == (12, 13):
+        dex_am = 1
+    if int(s_dexterity) == (14, 15):
+        dex_am = 2
+    if int(s_dexterity) == (16, 17):
+        dex_am = 3 
+    if int(s_dexterity) == (18, 19):
+        dex_am = 4
+    if int(s_dexterity) == (20, 21):
+        dex_am = 5
+
+    if int(s_constitution) == (2, 3):
+        con_am = -4
+    if int(s_constitution) == (4, 5):
+        con_am = -3
+    if int(s_constitution) == (6, 7):
+        con_am = -2
+    if int(s_constitution) == (8, 9):
+        con_am = -1
+    if int(s_constitution) == (10, 11):
+        con_am = 0
+    if int(s_constitution) == (12, 13):
+        con_am = 1
+    if int(s_constitution) == (14, 15):
+        con_am = 2
+    if int(s_constitution) == (16, 17):
+        con_am = 3 
+    if int(s_constitution) == (18, 19):
+        con_am = 4
+    if int(s_constitution) == (20, 21):
+        con_am = 5
+
+    if int(s_intel) == (2, 3):
+        int_am = -4
+    if int(s_intel) == (4, 5):
+        int_am = -3
+    if int(s_intel) == (6, 7):
+        int_am = -2
+    if int(s_intel) == (8, 9):
+        int_am = -1
+    if int(s_intel) == (10, 11):
+        int_am = 0
+    if int(s_intel) == (12, 13):
+        int_am = 1
+    if int(s_intel) == (14, 15):
+        int_am = 2
+    if int(s_intel) == (16, 17):
+        int_am = 3 
+    if int(s_intel) == (18, 19):
+        int_am = 4
+    if int(s_intel) == (20, 21):
+        int_am = 5
+
+    if int(s_wisdom) == (2, 3):
+        wis_am = -4
+    if int(s_wisdom) == (4, 5):
+        wis_am = -3
+    if int(s_wisdom) == (6, 7):
+        wis_am = -2
+    if int(s_wisdom) == (8, 9):
+        wis_am = -1
+    if int(s_wisdom) == (10, 11):
+        wis_am = 0
+    if int(s_wisdom) == (12, 13):
+        wis_am = 1
+    if int(s_wisdom) == (14, 15):
+        wis_am = 2
+    if int(s_wisdom) == (16, 17):
+        wis_am = 3 
+    if int(s_wisdom) == (18, 19):
+        wis_am = 4
+    if int(s_wisdom) == (20, 21):
+        wis_am = 5
+
+    if int(s_charisma) == (2, 3):
+        char_am = -4
+    if int(s_charisma) == (4, 5):
+        char_am = -3
+    if int(s_charisma) == (6, 7):
+        char_am = -2
+    if int(s_charisma) == (8, 9):
+        char_am = -1
+    if int(s_charisma) == (10, 11):
+        char_am = 0
+    if int(s_charisma) == (12, 13):
+        char_am = 1
+    if int(s_charisma) == (14, 15):
+        char_am = 2
+    if int(s_charisma) == (16, 17):
+        char_am = 3 
+    if int(s_charisma) == (18, 19):
+        char_am = 4
+    if int(s_charisma) == (20, 21):
+        char_am = 5
+
+    print ("Ability Modifiers Set!")
+    print ("Strength:", str_am, "Dexterity:", dex_am, "Constitution:", con_am, "Intelligence:", int_am, "Wisdom:", wis_am, "Charisma:", char_am)
+
 def abilityscores():
 
+    global s_strength, s_dexterity, s_constitution, s_intel, s_wisdom, s_charisma
     rollorpick = input ("Do you want to roll or pick your ability scores?")
     if rollorpick == "r":
         print ("Rolling for stats...")
@@ -98,6 +234,7 @@ def abilityscores():
             s_charisma = input (statlist)
             if int(s_charisma) in statlist:
                 statlist.remove(int(s_charisma))
+                abilitymodifiers()
             else:
                 print ("Invalid stat number")
 
