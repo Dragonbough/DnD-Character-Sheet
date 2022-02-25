@@ -5,7 +5,6 @@ def abilityscores():
 
     rollorpick = input ("Do you want to roll or pick your ability scores?")
     if rollorpick == "r":
-        print ("You may assign each of these numbers once to one of the abilities: 15,14,13,12,10,8")
         print ("Rolling for stats...")
         time.sleep(1)
         a_stat1 = random.randrange(1, 6)
@@ -67,38 +66,38 @@ def abilityscores():
         if m_or_n == "y":
             print ("What stat number will you assign to Strength?")
             s_strength = input (statlist)
-            if str(s_strength) in statlist:
-                statlist.remove(s_strength)
+            if int(s_strength) in statlist:
+                statlist.remove(int(s_strength))
             else:
                 print ("Invalid stat number")
             print("What stat number will you assign to Dexterity?")
             s_dexterity = input (statlist)
-            if s_dexterity in statlist:
-                statlist.remove(s_dexterity)
+            if int(s_dexterity) in statlist:
+                statlist.remove(int(s_dexterity))
             else:
                 print ("Invalid stat number")
             print ("What stat number will you assign to Constitution?")
             s_constitution = input (statlist)
-            if s_constitution in statlist:
-                statlist.remove(s_constitution)
+            if int(s_constitution) in statlist:
+                statlist.remove(int(s_constitution))
             else:
                 print ("Invalid stat number")
             print ("What stat number will you assign to Intelligence?")
             s_intel = input (statlist)
-            if s_intel in statlist:
-                statlist.remove(s_intel)
+            if int(s_intel) in statlist:
+                statlist.remove(int(s_intel))
             else:
                 print ("Invalid stat number")
             print ("What stat number will you assign to Wisdom?")
             s_wisdom = input (statlist)
-            if s_wisdom in statlist:
-                statlist.remove(s_wisdom)
+            if int(s_wisdom) in statlist:
+                statlist.remove(int(s_wisdom))
             else:
                 print ("Invalid stat number")
             print ("What stat number will you apply to Charisma?")
             s_charisma = input (statlist)
-            if str(s_charisma) in statlist:
-                statlist.remove(s_charisma)
+            if int(s_charisma) in statlist:
+                statlist.remove(int(s_charisma))
             else:
                 print ("Invalid stat number")
 
