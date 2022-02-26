@@ -140,6 +140,50 @@ def abilityscores():
 
     global s_strength, s_dexterity, s_constitution, s_intel, s_wisdom, s_charisma
     rollorpick = input ("Do you want to roll or pick your ability scores?")
+    if rollorpick == "p":
+        statlist = [15, 14, 13, 12, 10, 8]
+        print ("You may assign each of these numbers to one of the abilities:", statlist)
+        print ("Do you want to assign your scores manually or use Auto Assign?")
+        m_or_n = input ("Y(Manual) or N(Auto)?")
+        if m_or_n == "y":
+            print ("What stat number will you assign to Strength?")
+            s_strength = input (statlist)
+            if int(s_strength) in statlist:
+                statlist.remove(int(s_strength))
+            else:
+                print ("Invalid stat number")
+            print("What stat number will you assign to Dexterity?")
+            s_dexterity = input (statlist)
+            if int(s_dexterity) in statlist:
+                statlist.remove(int(s_dexterity))
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Constitution?")
+            s_constitution = input (statlist)
+            if int(s_constitution) in statlist:
+                statlist.remove(int(s_constitution))
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Intelligence?")
+            s_intel = input (statlist)
+            if int(s_intel) in statlist:
+                statlist.remove(int(s_intel))
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you assign to Wisdom?")
+            s_wisdom = input (statlist)
+            if int(s_wisdom) in statlist:
+                statlist.remove(int(s_wisdom))
+            else:
+                print ("Invalid stat number")
+            print ("What stat number will you apply to Charisma?")
+            s_charisma = input (statlist)
+            if int(s_charisma) in statlist:
+                statlist.remove(int(s_charisma))
+                abilitymodifiers()
+            else:
+                print ("Invalid stat number")
+
     if rollorpick == "r":
         print ("Rolling for stats...")
         time.sleep(1)
